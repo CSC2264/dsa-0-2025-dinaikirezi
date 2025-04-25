@@ -12,6 +12,8 @@ public class Main {
     Random rand = new Random();
      int[]result =new int[size];
       for (int i = 0; i < size; i++) {
+        result[i] = rand.nextInt(high - low + 1) + low;
+        }
      return result;
  }
   public static void mergesort(int[] a,int low, int high ){
