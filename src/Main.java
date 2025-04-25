@@ -9,6 +9,7 @@ public class Main {
    /*Generate 10000 random integers between 1 and 100
     */
  public static int[] generate(int low, int high, int size){
+    Random rand = new Random();
      int[]result =new int[size];
      return result;
  }
