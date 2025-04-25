@@ -1,10 +1,11 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         int[] numbers=generate(1,100,10000);
-        mergesort(numbers,0,99);
+        mergesort(numbers,0,numbers.length - 1);
         display(numbers);
+        System.out.println();
     }
    /*Generate 10000 random integers between 1 and 100
     */
