@@ -11,6 +11,7 @@ public class Main {
  public static int[] generate(int low, int high, int size){
     Random rand = new Random();
      int[]result =new int[size];
+      for (int i = 0; i < size; i++) {
      return result;
  }
   public static void mergesort(int[] a,int low, int high ){
