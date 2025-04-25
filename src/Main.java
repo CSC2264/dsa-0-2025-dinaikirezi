@@ -16,9 +16,14 @@ public class Main {
         }
         return result;
     }
-  public static void mergesort(int[] a,int l, int h ){
-
-  }
+  public static void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = left + (right - left) / 2;
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+            merge(arr, left, mid, right);
+        }
+    }
   public static void display(int[]a){
      for(int x: a){
          System.out.print(x );
