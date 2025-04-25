@@ -7,17 +7,16 @@ public class Main {
         display(numbers);
         System.out.println();
     }
-   /*Generate 10000 random integers between 1 and 100
-    */
- public static int[] generate(int low, int high, int size){
-    Random rand = new Random();
-     int[]result =new int[size];
-      for (int i = 0; i < size; i++) {
-        result[i] = rand.nextInt(high - low + 1) + low;
+
+ public static int[] generate(int l, int h, int s) {
+        Random rand = new Random();
+        int[] result = new int[s];
+        for (int i = 0; i < s; i++) {
+            result[i] = rand.nextInt(h - l + 1) + l;
         }
-     return result;
- }
-  public static void mergesort(int[] a,int low, int high ){
+        return result;
+    }
+  public static void mergesort(int[] a,int l, int h ){
 
   }
   public static void display(int[]a){
